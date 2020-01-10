@@ -1,0 +1,16 @@
+<%= simple_form_for @room do |form| %>
+  <%= form.input :name %>
+  <h3>
+  Guests  
+</h3>
+  <ul>
+  <% User.all.where('id != ?', current_user.id).each do |role| %>
+      <li>
+        <%= check_box_tag 'guest_ids[]', role.id -%>
+        <%= h role.username -%>
+        (<%= h role.email -%>)
+      </li>
+  <% end %>
+</ul>
+  <%= form.submit "Save", class: 'btn btn-success' %>
+<% end %>

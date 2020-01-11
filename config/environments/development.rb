@@ -38,15 +38,15 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name:      'galia.kenispaeva@gmail.com',
-    password:       'JuzikKeni',
-    domain:         'localhost:3000',
-    address:       'smtp.gmail.com',
+    user_name:      ENV['SENDGRID_USERNAME'],
+    password:       ENV['SENDGRID_PASSWORD'],
+    domain:         'heroku.com',
+    address:       'smtp.sendgrid.net',
     port:          '587',
     authentication: :plain,
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { :host => 'localhost' }
+  config.action_mailer.default_url_options = { :host => 'desolate-beyond-67025.herokuapp.com' }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

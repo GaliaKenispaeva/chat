@@ -68,3 +68,4 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'redis'
 gem 'rails_12factor', group: :production
+gem 'sendgrid-ruby'

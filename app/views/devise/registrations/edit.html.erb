@@ -28,6 +28,8 @@
   </div>
 <% end %>
 
+<p><%= link_to "Two Factor Authentication", admin_admin_two_factor_path %></p>
+
 <h3>Cancel my account</h3>
 
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>

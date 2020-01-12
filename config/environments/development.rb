@@ -47,7 +47,7 @@ Rails.application.configure do
     authentication: :plain,
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { :host => 'desolate-beyond-67025.herokuapp.com' }
+  #config.action_mailer.default_url_options = { :host => 'desolate-beyond-67025.herokuapp.com' }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

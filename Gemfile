@@ -69,3 +69,7 @@ gem 'simple_form'
 gem 'redis'
 gem 'rails_12factor', group: :production
 gem 'sendgrid-ruby'
+gem 'devise-two-factor'
+gem 'rqrcode'
+gem 'rqrcode_png'
+gem 'chunky_png'

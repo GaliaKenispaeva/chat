@@ -1,3 +1,5 @@
+ENV['SENDGRID_USERNAME'] = 'app158320206@heroku.com'
+ENV['SENDGRID_PASSWORD'] = 'qbjchjxl4421'
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address              =>  'smtp.sendgrid.net',

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     delete '/two_factor' => 'two_factors#destroy'
   end
   
+  mount ActionCable.server => '/cable'
+  
   root controller: :rooms, action: :index
 
   resources :room_messages

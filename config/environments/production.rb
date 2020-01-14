@@ -105,4 +105,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.force_ssl = true
+
+  config.web_socket_server_url = "wss://floating-journey-64892.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://floating-journey-64892.herokuapp.com', 'http://floating-journey-64892.herokuapp.com']
 end

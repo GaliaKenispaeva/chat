@@ -3,12 +3,12 @@
 <p>Type your password to disable <em>Two Factor Auth</em></p>
 
 <%= form_for current_user, url: [:admin, :two_factor], method: 'DELETE' do |f| %>
-  <div class="field">
+  <div class="field form-inputs">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Disable" %>
+  <div class="form-actions">
+    <%= f.submit "Disable", class: 'btn btn-danger' %>
   </div>
 <% end %>

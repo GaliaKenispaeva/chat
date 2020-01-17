@@ -67,7 +67,6 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'redis'
-gem 'rails_12factor', group: :production
 gem 'sendgrid-ruby'
 gem 'devise-two-factor'
 gem 'rqrcode'
